@@ -1,5 +1,5 @@
-import TodoAdd from '@/app/components/TodoAdd'
-import TodoList from '@/app/components/TodoList'
+import TodoAdd from '@/app/components/Todos/TodoAdd'
+import TodoList from '@/app/components/Todos/TodoList'
 import Image from 'next/image'
 import React from 'react'
 

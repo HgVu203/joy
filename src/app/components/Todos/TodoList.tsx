@@ -1,9 +1,9 @@
 "use client"
 import React from 'react'
-import TodoItem from '@/app/components/TodoItem'
 import { TStore } from '@/lib/store'
 import { useDispatch, useSelector } from 'react-redux'
 import { changeCompletedTodo, deleteTodo } from '@/lib/Todo/TodoSlice'
+import TodoItem from './TodoItem'
 const TodoList = () =>
 {
     const [ selectJob, setSelectJob ] = React.useState<string>( "all" );
