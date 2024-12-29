@@ -27,7 +27,6 @@ const ContactSection = () =>
                         <div className="space-y-3">
                             <input className='w-full h-[59px] px-6 py-4 bg-[#F3F3F3] placeholder:text-[#2D2D2D]' type="text" placeholder='Name' />
                             <input className='w-full h-[59px] px-6 py-4 bg-[#F3F3F3] placeholder:text-[#2D2D2D]' type="text" placeholder='Email' />
-
                         </div>
                         <button className='px-16 py-6 bg-[#2D2D2D] text-white text-fs20 font-semibold'>Submit</button>
                     </div>

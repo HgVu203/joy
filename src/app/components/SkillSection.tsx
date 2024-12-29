@@ -2,22 +2,23 @@ import React from 'react'
 import SkillProduct from '../../../public/images/SkillProduct'
 import SkillVisual from '../../../public/images/SkillVisual'
 import SkillArt from '../../../public/images/SkillArt'
+import SkillCard from './SkillCard'
 
 const SkillSection = () =>
 {
     const skills = [
         {
-            image: SkillProduct,
+            Img: SkillProduct,
             title: 'Product Design',
             description: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com'
         },
         {
-            image: SkillVisual,
+            Img: SkillVisual,
             title: 'Visual Design',
             description: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com'
         },
         {
-            image: SkillArt,
+            Img: SkillArt,
             title: 'Art Direction',
             description: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com'
         }
@@ -28,13 +29,7 @@ const SkillSection = () =>
                 { skills.map( ( skill, index ) =>
                 {
                     return (
-                        <div key={ skill.title } className="flex flex-col gap-[42px] justify-center items-center px-[42px] py-16">
-                            <skill.image />
-                            <div className="text-center space-y-3">
-                                <h3 className='text-[27px] font-semibold'>{ skill.title }</h3>
-                                <span>{ skill.description }</span>
-                            </div>
-                        </div>
+                        <SkillCard key={ index } Img={ skill.Img } title={ skill.title } description={ skill.description } />
                     )
                 } ) }
             </div>
