@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from 'next/font/google'
 import "./globals.css";
 import localFont from 'next/font/local'
 import StoreProvider from "./StoreProvider";
 import { ToastContainer } from 'react-toastify';
-const myFont = localFont( {
-  src: 'fonts/Epilogue-Regular.ttf',
+const Poppins = localFont( {
+  src: 'fonts/Poppins-SemiBold.ttf',
 } )
 
 
@@ -18,7 +18,7 @@ export default function RootLayout ( {
   return (
     <html className="scroll-smooth" lang="en" suppressHydrationWarning>
       <body
-        className={ `${ myFont.className }` }
+        className={ `${ Poppins.className } bg-white text-black` }
       >
         <ToastContainer autoClose={ 2000 } />
         <StoreProvider>
